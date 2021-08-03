@@ -1,0 +1,11 @@
+<html>
+  
+    <p>Enter First and Last Name:</p>
+    <form #customerPost="ngForm" (ngSubmit)="onSubmit(customerPost.value)">
+      <input name="firstName" ngModel placeholder ="firstName" required><br/>
+      <input name="lastName" ngModel placeholder ="lastName" required><br/>
+      <button type="submit" value="Submit">Get Points</button>
+    </form>
+    <p>Rewards Points:</p>
+      <div>{{rewardPoints.rewardsPoints}}</div>
+</html>
