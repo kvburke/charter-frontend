@@ -1,8 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {Customer} from './customer'
-import { CustomerBillComponent } from './customer-bill.component';
-import { RewardPoints } from './rewardPoints';
 import { Observable } from 'rxjs';
 
 @Injectable({

@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { BillingService } from '../components/customer-bill/billing.service';
+import { BillingService } from '../services/billing.service';
 
 describe('BillingService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

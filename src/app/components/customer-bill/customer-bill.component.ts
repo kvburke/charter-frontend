@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {Customer} from './customer';
-import {BillingService } from './billing.service'
-import {FormBuilder} from '@angular/forms';
-import { RewardPoints } from './rewardPoints';
-import { Observable } from 'rxjs';
+import {Customer} from '../../models/Customer';
+import {BillingService } from '../../services/billing.service';
+import { RewardPoints } from '../../models/RewardPoints';
+
 
 @Component({
   selector: 'app-customer-bill',
