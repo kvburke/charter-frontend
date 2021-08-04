@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class BillingService {
+export class RewardsService {
 
   constructor(public http: HttpClient) {
     console.log('Data Service connected...');

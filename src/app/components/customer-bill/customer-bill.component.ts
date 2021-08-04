@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Customer} from '../../models/Customer';
-import {BillingService } from '../../services/billing.service';
+import {RewardsService } from '../../services/rewards.service';
 import { RewardPoints } from '../../models/RewardPoints';
 
 
@@ -9,17 +9,17 @@ import { RewardPoints } from '../../models/RewardPoints';
   templateUrl: './customer-bill.component.html',
   styleUrls: ['./customer-bill.component.css']
 })
-export class CustomerBillComponent implements OnInit {
+export class CustomerRewardsComponent implements OnInit {
 
   
 
-  constructor(billingService:BillingService) {
-    this.billingService=billingService;
+  constructor(rewardsService:RewardsService) {
+    this.rewardsService=rewardsService;
 
    }
 
   customer: Customer;
-  billingService: BillingService;
+  rewardsService: RewardsService;
   rewardPoints: RewardPoints;
   
 
@@ -33,7 +33,7 @@ export class CustomerBillComponent implements OnInit {
 
   onSubmit(data: Customer){
     
-    this.billingService.getBill(data.firstName, data.lastName).subscribe(
+    this.rewardsService.getBill(data.firstName, data.lastName).subscribe(
       data => {
         console.log(data)
         this.rewardPoints=data;
