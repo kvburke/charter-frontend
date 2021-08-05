@@ -5,9 +5,9 @@ import { RewardPoints } from '../../models/RewardPoints';
 
 
 @Component({
-  selector: 'app-customer-bill',
-  templateUrl: './customer-bill.component.html',
-  styleUrls: ['./customer-bill.component.css']
+  selector: 'app-customer-rewards',
+  templateUrl: './customer-rewards.component.html',
+  styleUrls: ['./customer-rewards.component.css']
 })
 export class CustomerRewardsComponent implements OnInit {
 
